@@ -94,20 +94,42 @@ ul.nav-links li a {
         margin-left: .5rem;
     }
 
-    .nav-links li {
-        width: 100%;
+    .dropdown li {
+        width: 100vw;
         text-align: center;
-        border-top: 0.1px solid white;
-        border-bottom: 0.1px solid white;
-    }
-
-    .nav-links li:first-child {
-        margin-top: .5rem;
     }
 
     .nav-links li > a {
         display: block;
         width: 100%;
         font-size: 1.5rem;
+    }
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+@media (min-width: 850px) {
+    .dropdown {
+        position: relative;
+    }
+    
+    .dropdown-menu {
+        display: inline;
+        position: absolute;
+        top: calc(100% + 0.25rem);
+        background-color: white;
+        padding: .75rem;
+        border-radius: .25rem;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0, .1);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    }
+    
+    [data-dropdown].active .dropdown-menu {
+        opacity: 1;
+        transform: translate(10px);
     }
 }
