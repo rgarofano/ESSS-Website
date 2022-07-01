@@ -1,3 +1,5 @@
+/* general CSS */
+
 * {
     box-sizing: border-box;
 }
@@ -8,6 +10,8 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+
+/* navbar styles */
 
 nav {
     display: flex;
@@ -32,6 +36,7 @@ nav {
     display: flex;
     justify-items: space-around;
     align-items: center;
+    z-index: 2;
 }
 
 ul.nav-links > .dropdown > li > a:hover {
@@ -187,3 +192,93 @@ ul.nav-links > .dropdown > li a {
     }
 
 }
+
+/* homepage styles */
+
+#slide-wrapper {
+    position: relative;
+    width: 50vw;
+    transform: translateX(-10%);
+}
+
+.cutout {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120%;
+    height: 100%;
+    background-color: white;
+    transform: skew(15deg);
+    z-index: 1;
+    padding-left: 9rem;
+    box-shadow: 2px 0 5px -2px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 4rem;
+    max-width: 80%;
+    max-height: 80%;
+    color: #203A6C;
+    transform: skew(-15deg);
+}
+
+#home-slider {
+    overflow: hidden;
+    width: 1000%;
+    z-index: -1;
+}
+
+#home-slider figure {
+    position: relative;
+    margin: 0;
+    left: 10%;
+    animation: 20s slider infinite;
+}
+
+@keyframes slider {
+    0% {
+        left: 10%;
+    }
+
+    20% {
+        left: 10%;
+    }
+
+    25% {
+        left: 0%
+    }
+
+    45% {
+        left: 0%;
+    }
+    
+    50% {
+        left: -10%;
+    }
+
+    70% {
+        left: -10%;
+    }
+
+    75% {
+        left: -20%;
+    }
+
+    95% {
+        left: -20%;
+    }
+
+    100% {
+        left: -30%;
+    }
+}
+
+#home-slider figure img {
+    transform: translateX(10%);
+    width: 10%;
+    float: left;
+}
+
+/* general homepage styles */
