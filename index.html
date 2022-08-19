@@ -8,8 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -117,27 +120,49 @@
             </figure>
         </div>
     </div>
-    <section class="home-card">
-            <span class="material-symbols-outlined" id="calendar-icon">event</span>
-            <ul class="vertical-list">
-                <li><i><b>Upcoming Events</b></i></li>
-                <li>No upcoming events right now, check back soon!</li>
-            </ul>
-    </section>
-    <section class="home-card">
-        <img src="./Home-Images/camp5.png" alt="camp5 logo" id="rings">
-        <p>The Iron Ring is worn by Canadian engineers as a symbol and reminder of the obligations and ethics associated with engineering. 
-            The ESSS manages the registration for Iron Ring for SFU Engineering students. 
-            Check out the Iron Ring page for the latest information regarding ceremonies.
-        </p>
-    </section>
-    <section class="home-card">
-        <span class="material-symbols-outlined" id="grad-cap">school</span>
-        <p>Need some help with your first- or second-year course? 
-            Join our tutoring <a href="https://canvas.sfu.ca/enroll/FLLKPB" target="_blank">Canvas</a> page to get some help from students who have already made it through those courses. 
-            Interested in being a tutor? 
-            We recruit at the end of each semester for the next one, so keep an eye on your email or check back here!
-        </p>
-    </section>
+    <div class="home-info-wrapper">
+        <article>
+            <section class="home-card">
+                <lord-icon src="https://cdn.lordicon.com/drtetngs.json" trigger="hover" colors="primary:#000000"></lord-icon>
+                <ul class="vertical-list">
+                    <li><i><b>Upcoming Events</b></i></li>
+                    <li>No upcoming events right now, check back soon!</li>
+                </ul>
+            </section>
+            <section class="home-card">
+                <img src="./Home-Images/camp5.png" alt="camp5 logo" id="rings">
+                <p>The Iron Ring is worn by Canadian engineers as a symbol and reminder of the obligations and ethics associated with engineering. 
+                    The ESSS manages the registration for Iron Ring for SFU Engineering students. 
+                    Check out the Iron Ring page for the latest information regarding ceremonies.
+                </p>
+            </section>
+            <section class="home-card">
+                <span class="material-symbols-outlined" id="grad-cap">school</span>
+                <p>Need some help with your first- or second-year course? 
+                    Join our tutoring <a href="https://canvas.sfu.ca/enroll/FLLKPB" target="_blank">Canvas</a> page to get some help from students who have already made it through those courses. 
+                    Interested in being a tutor? 
+                    We recruit at the end of each semester for the next one, so keep an eye on your email or check back here!
+                </p>
+            </section>
+        </article>
+        <aside class="social-media-panel">
+            <h3>Follow Us On Social Media!</h3>
+            <section>
+                <a href="https://www.facebook.com/SFU.ESSS/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/sfuengineers/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/company/sfu-engineering-science-student-society/about/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://discord.gg/54cH9YHKha" target="_blank"><iconify-icon icon="simple-icons:discord" class="fa fa-discord"></iconify-icon></a>
+            </section>
+            <h3>Thanks to our Opfair sponsors!</h3>
+            <section>
+                <div class="opfair-logos">
+                    <img src="./Home-Images/Sponsors/kabam_logo.png" alt="kabam logo" id="kabam">
+                    <img src="./Home-Images/Sponsors/konrad_logo.jpg" alt="konrad logo" id="konrad">
+                    <img src="./Home-Images/Sponsors/pdftron_logo.png" alt="pdftron logo" id="pdftron">
+                    <img src="./Home-Images/Sponsors/zaber_logo.png" alt="zaber logo" id="zaber">
+                </div>
+            </section>
+        </aside>
+    </div>
 </body>
 </html>
