@@ -270,7 +270,7 @@ h2 {
 }
 
 @media (max-width: 1030px) {
-    h2 {
+    div.cutout h2 {
         display: none;
     }
 }
@@ -290,7 +290,7 @@ h2 {
         display: none;
     }
 
-    h2 {
+    div.cutout h2 {
         display: none;
     }
 
@@ -466,13 +466,6 @@ h3 {
     width: 8rem;
 }
 
-h2.paragraph-heading {
-    font-size: 4rem;
-    color: black;
-    font-style: normal;
-    transform: none;
-}
-
 .page {
     animation: fadeIn 700ms, scaleUp 500ms;
 }
@@ -495,4 +488,35 @@ h2.paragraph-heading {
     to {
         transform: scale(100%);
     }
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-container p {
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 3rem;
+    width: 75%;
+    color: black;
+    font-style: normal;
+    margin: 2rem 0 1rem 0;
+    transform: none;
+}
+
+.bullet-points {
+    text-align: left;
+    max-width: 40%;
+}
+
+.text-container h3 {
+    width: 100%;
 }
