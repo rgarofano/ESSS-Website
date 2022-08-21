@@ -30,6 +30,10 @@ nav {
     color: white;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .nav-links {
     list-style: none;
     height: 100%;
@@ -78,13 +82,12 @@ ul.nav-links > .dropdown > li a {
 
     .nav-links.active {
         display: flex;
-        max-height: 5%;
-        transition: max-height 0.25s ease-in;
+        margin: 3.5rem 0 0.5rem 0;
+        animation: scaleUp 300ms;
     }
 
     .nav-links {
         display: none;
-        max-height: 0;
         flex-direction: column;
         justify-content: space-between;
         row-gap: 0.5rem;
@@ -101,8 +104,9 @@ ul.nav-links > .dropdown > li a {
     }
 
     .logo {
-        margin: 0 0 0 .5rem;
-        padding-bottom: .3rem;
+        position: absolute;
+        top: .3rem;
+        margin-left: 0.5rem;
     }
 
     .dropdown li {
@@ -151,6 +155,11 @@ ul.nav-links > .dropdown > li a {
     ul.dropdown-content > li > a:hover {
         color: rgba(255, 255, 255, 0.8);
     }
+
+    .opfair-logos {
+        padding-left: .5rem;
+    }
+
 }
 
 @media (min-width: 1400px) {
@@ -261,7 +270,7 @@ h2 {
 }
 
 @media (max-width: 1030px) {
-    h2 {
+    div.cutout h2 {
         display: none;
     }
 }
@@ -281,7 +290,7 @@ h2 {
         display: none;
     }
 
-    h2 {
+    div.cutout h2 {
         display: none;
     }
 
@@ -358,9 +367,8 @@ h2 {
 }
 
 .home-card {
-    height: fit-content;
+    min-height: fit-content;
     width: 59.5vw;
-    /* max-width: 830px; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -456,4 +464,59 @@ h3 {
 #zaber {
     height: 2.5rem;
     width: 8rem;
+}
+
+.page {
+    animation: fadeIn 700ms, scaleUp 500ms;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0%);
+    }
+
+    to {
+        transform: scale(100%);
+    }
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-container p {
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 3rem;
+    width: 75%;
+    color: black;
+    font-style: normal;
+    margin: 2rem 0 1rem 0;
+    transform: none;
+}
+
+.bullet-points {
+    text-align: left;
+    max-width: 40%;
+}
+
+.text-container h3 {
+    width: 100%;
 }

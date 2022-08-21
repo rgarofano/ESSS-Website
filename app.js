@@ -1,17 +1,36 @@
 const toggleButton = document.querySelector('.toggle-button');
 const navLinks = document.querySelector('.nav-links');
 const logo = document.querySelector('.logo');
+const pages = document.querySelectorAll('.page');
+const links = document.querySelectorAll('.page-link');
+
+for (let page of pages) {
+    if (!page.classList.contains('home')) {
+        page.style.display = 'none';
+    }
+}
+
+links.forEach( link => {
+    link.addEventListener('click', e => {
+        let target_class;
+        for (let c of e.target.classList) {   
+            if (c !== 'page-link' && c !== 'logo') {
+                target_class = c;
+            }
+        }
+        for (let page of pages) {
+            if (!page.classList.contains(target_class)) {
+                page.style.display = 'none';
+            }
+            else {
+                page.style.display = 'block';
+            }
+        }
+    });
+});
 
 toggleButton.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    if (navLinks.classList.contains('active')) {
-        logo.style.transform = 'translateY(.2rem)';
-        logo.style.transition = 'transform .3s ease-in-out';
-        logo.style.padding = '0';
-    }
-    else {
-        logo.style.transform = 'translateY(-.2rem)';
-    }
 });
 
 

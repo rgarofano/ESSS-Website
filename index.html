@@ -13,11 +13,11 @@
     <script src="app.js" defer></script>
     <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-    <title>Document</title>
+    <title>SFU ESSS</title>
 </head>
 <body>
     <nav>
-        <img src="Banner_White.svg" alt="ESSS logo" class="logo">
+        <img src="Banner_White.svg" alt="ESSS logo" class="page-link home logo">
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -28,7 +28,7 @@
                 <li><a href="#" data-dropdown-button>Get Involved</a></li>
                 <div class="dropdown-menu">
                     <ul class="dropdown-content">
-                        <li><a href="#">Meetings</a></li>
+                        <li><a href="#" class="page-link meetings">Meetings</a></li>
                         <li><a href="#">Positions</a></li>
                         <li><a href="#">Clubs and Teams</a></li>
                         <li><a href="#">Mentorship Program</a></li>
@@ -104,65 +104,91 @@
             </div>
         </ul>
     </nav>
-    <div id="slide-wrapper">
-        <div class="cutout">
-            <h1>Welcome to the digital version of the <i><u>ESSS</u></i></h1>
-            <h2>Look around for SFU Engineering student resources, event information, merch, and more!</h2>
-            <img src="Icon Blue.svg" alt="ESSS Icon" id="esss-icon">
+    <div class="home page">
+        <div id="slide-wrapper">
+            <div class="cutout">
+                <h1>Welcome to the digital version of the <i><u>ESSS</u></i></h1>
+                <h2>Look around for SFU Engineering student resources, event information, merch, and more!</h2>
+                <img src="Icon Blue.svg" alt="ESSS Icon" id="esss-icon">
+            </div>
+            <div id="home-slider">
+                <figure>
+                    <img src="./Home-Images/1.jpg" alt="students">
+                    <img src="./Home-Images/2.jpg" alt="students and faculty">
+                    <img src="./Home-Images/3.jpg" alt="students">
+                    <img src="./Home-Images/4.jpg" alt="students">
+                    <img src="./Home-Images/1.jpg" alt="students">
+                </figure>
+            </div>
         </div>
-        <div id="home-slider">
-            <figure>
-                <img src="./Home-Images/1.jpg" alt="students">
-                <img src="./Home-Images/2.jpg" alt="students and faculty">
-                <img src="./Home-Images/3.jpg" alt="students">
-                <img src="./Home-Images/4.jpg" alt="students">
-                <img src="./Home-Images/1.jpg" alt="students">
-            </figure>
+        <div class="home-info-wrapper">
+            <article>
+                <section class="home-card">
+                    <lord-icon src="https://cdn.lordicon.com/drtetngs.json" trigger="hover" colors="primary:#000000"></lord-icon>
+                    <ul class="vertical-list">
+                        <li><i><b>Upcoming Events</b></i></li>
+                        <li>No upcoming events right now, check back soon!</li>
+                    </ul>
+                </section>
+                <section class="home-card">
+                    <img src="./Home-Images/camp5.png" alt="camp5 logo" id="rings">
+                    <p>The Iron Ring is worn by Canadian engineers as a symbol and reminder of the obligations and ethics associated with engineering. 
+                        The ESSS manages the registration for Iron Ring for SFU Engineering students. 
+                        Check out the Iron Ring page for the latest information regarding ceremonies.
+                    </p>
+                </section>
+                <section class="home-card">
+                    <span class="material-symbols-outlined" id="grad-cap">school</span>
+                    <p>Need some help with your first- or second-year course? 
+                        Join our tutoring <a href="https://canvas.sfu.ca/enroll/FLLKPB" target="_blank">Canvas</a> page to get some help from students who have already made it through those courses. 
+                        Interested in being a tutor? 
+                        We recruit at the end of each semester for the next one, so keep an eye on your email or check back here!
+                    </p>
+                </section>
+            </article>
+            <aside class="social-media-panel">
+                <h3>Follow Us On Social Media!</h3>
+                <section>
+                    <a href="https://www.facebook.com/SFU.ESSS/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/sfuengineers/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/company/sfu-engineering-science-student-society/about/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://discord.gg/54cH9YHKha" target="_blank"><iconify-icon icon="simple-icons:discord" class="fa fa-discord"></iconify-icon></a>
+                </section>
+                <h3>Thanks to our Opfair sponsors!</h3> 
+                <section>
+                    <div class="opfair-logos">
+                        <img src="./Home-Images/Sponsors/kabam_logo.png" alt="kabam logo" id="kabam">
+                        <img src="./Home-Images/Sponsors/konrad_logo.jpg" alt="konrad logo" id="konrad">
+                        <img src="./Home-Images/Sponsors/pdftron_logo.png" alt="pdftron logo" id="pdftron">
+                        <img src="./Home-Images/Sponsors/zaber_logo.png" alt="zaber logo" id="zaber">
+                    </div>
+                </section>
+            </aside>
         </div>
     </div>
-    <div class="home-info-wrapper">
-        <article>
-            <section class="home-card">
-                <lord-icon src="https://cdn.lordicon.com/drtetngs.json" trigger="hover" colors="primary:#000000"></lord-icon>
-                <ul class="vertical-list">
-                    <li><i><b>Upcoming Events</b></i></li>
-                    <li>No upcoming events right now, check back soon!</li>
-                </ul>
-            </section>
-            <section class="home-card">
-                <img src="./Home-Images/camp5.png" alt="camp5 logo" id="rings">
-                <p>The Iron Ring is worn by Canadian engineers as a symbol and reminder of the obligations and ethics associated with engineering. 
-                    The ESSS manages the registration for Iron Ring for SFU Engineering students. 
-                    Check out the Iron Ring page for the latest information regarding ceremonies.
-                </p>
-            </section>
-            <section class="home-card">
-                <span class="material-symbols-outlined" id="grad-cap">school</span>
-                <p>Need some help with your first- or second-year course? 
-                    Join our tutoring <a href="https://canvas.sfu.ca/enroll/FLLKPB" target="_blank">Canvas</a> page to get some help from students who have already made it through those courses. 
-                    Interested in being a tutor? 
-                    We recruit at the end of each semester for the next one, so keep an eye on your email or check back here!
-                </p>
-            </section>
-        </article>
-        <aside class="social-media-panel">
-            <h3>Follow Us On Social Media!</h3>
-            <section>
-                <a href="https://www.facebook.com/SFU.ESSS/" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/sfuengineers/" target="_blank" class="fa fa-instagram"></a>
-                <a href="https://www.linkedin.com/company/sfu-engineering-science-student-society/about/" target="_blank" class="fa fa-linkedin"></a>
-                <a href="https://discord.gg/54cH9YHKha" target="_blank"><iconify-icon icon="simple-icons:discord" class="fa fa-discord"></iconify-icon></a>
-            </section>
-            <h3>Thanks to our Opfair sponsors!</h3>
-            <section>
-                <div class="opfair-logos">
-                    <img src="./Home-Images/Sponsors/kabam_logo.png" alt="kabam logo" id="kabam">
-                    <img src="./Home-Images/Sponsors/konrad_logo.jpg" alt="konrad logo" id="konrad">
-                    <img src="./Home-Images/Sponsors/pdftron_logo.png" alt="pdftron logo" id="pdftron">
-                    <img src="./Home-Images/Sponsors/zaber_logo.png" alt="zaber logo" id="zaber">
-                </div>
-            </section>
-        </aside>
+    <div class="meetings page">
+        <div class="text-container">
+            <h4 class="paragraph-heading">Meetings</h4>
+            <p>Meeting times are set at the start of each semester, 
+                keep your eye out for an email about general meeting times 
+                if you want to give input on when you’re available. 
+                Miss a meeting or can’t remember a detail from a past meeting? 
+                Take a look at our <a href="https://drive.google.com/drive/folders/1PpBJK7pzMSLRLvKEDHA2X4vPodqnTKSw" target="_blank">meeting minutes!</a>
+            </p>
+            <h3>General Meeting</h3>
+            <ul class="bullet-points">
+                <li>Public meetings open to anyone!</li>
+                <li>All ENSC students (ENSC majors, minors, or in an ENSC class) have voting rights</li>
+                <li>Fall 2022 Meeting Dates - <i>TBD</i></li>
+                <li><a href="#">Subscribe to our newsletter</a> for meeting reminders</li>
+            </ul>
+            <h3>Executive Meeting</h3>
+            <ul class="bullet-points">
+                <li>Public meetings open to anyone!</li>
+                <li>ESSS executives have voting rights</li>
+                <li>Fall 2022 Meeting Dates - <i>TBD</i></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
