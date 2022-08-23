@@ -166,6 +166,10 @@ ul.nav-links > .dropdown > li a {
     .dropdown {
         position: relative;
     }
+
+    div.about {
+        width: 225%;
+    }
     
     .dropdown-menu {
         display: inline;
@@ -514,9 +518,70 @@ h4 {
 
 .bullet-points {
     text-align: left;
-    max-width: 40%;
+    width: 22rem;
 }
 
 .text-container h3 {
     width: 100%;
+}
+
+h5 {
+    font-size: large;
+    margin: 0;
+}
+
+div.role-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 20%;
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.7);
+    padding: .5rem;
+    margin: .2rem;
+    transition: transform 100ms ease-in-out;
+}
+
+div.role-card:hover {
+    transform: scale(1.05);
+}
+
+div.role-card ul {
+    text-align: left;
+    width: 80%;
+}
+
+span.role-name {
+    width: 20%;
+    font-weight: 100;
+    background-color: #203A6C;
+    color: white;
+    padding: 5rem 0 5rem 0;
+}
+
+@media (max-width: 1400px) {
+    div.role-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+        width: 40%;
+    }
+
+    
+    div.role-card:hover {
+        transform: none;
+    }
+
+    span.role-name {
+        width: fit-content;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        padding: 0;
+    }
+
+    div.role-card ul {
+        width: 150%;
+    }
 }
