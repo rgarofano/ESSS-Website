@@ -746,6 +746,7 @@ div.navigator-text h4 {
 div.navigator-wrapper {
     display: inline-block;
     width: 45rem;
+    height: fit-content;
     margin: 2rem 1rem 5rem 1rem;
     transform: translate(5%, 5%) rotate3d(1,1,-11, 5deg);
     box-shadow: 1rem 1rem 0.8rem rgba(0, 0, 0, 0.5);
