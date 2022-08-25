@@ -162,11 +162,13 @@ ul.nav-links > .dropdown > li a {
         opacity: 0;
         transform: translateY(-10px);
         transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+        pointer-events: none;
     }
     
     [data-dropdown].active .dropdown-menu {
         opacity: 1;
         transform: translate(10px);
+        pointer-events: all;
     }
 
     ul.dropdown-content {
