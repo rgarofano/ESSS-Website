@@ -3,6 +3,29 @@ const navLinks = document.querySelector('.nav-links');
 const logo = document.querySelector('.logo');
 const pages = document.querySelectorAll('.page');
 const links = document.querySelectorAll('.page-link');
+const panel_links = document.querySelectorAll('.hover-container');
+const scrollable = document.querySelector('.scroll-container')
+
+for (num of panel_links) {
+    num.addEventListener('click', e => {
+        let container = e.target.closest('.hover-container');
+        if (container?.classList.contains('1')) {
+            scrollable.scrollTo(0,0);
+        }
+        else if (container?.classList.contains('2')) {
+            scrollable.scrollTo(0,450);
+        }
+        else if (container?.classList.contains('3')) {
+            scrollable.scrollTo(0,450*2);
+        }
+        else if (container?.classList.contains('4')) {
+            scrollable.scrollTo(0,450*3);
+        }
+        else if (container?.classList.contains('5')) {
+            scrollable.scrollTo(0,450*4);
+        }
+    });
+}
 
 for (let page of pages) {
     if (!page.classList.contains('home')) {
@@ -24,6 +47,9 @@ links.forEach( link => {
             }
             else {
                 page.style.display = 'block';
+                if (target_class === 'resources') {
+                        page.style.display = 'flex';
+                }
             }
         }
     });
