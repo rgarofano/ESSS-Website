@@ -1098,3 +1098,56 @@ div.hover-container:hover {
         display: none;
     }
 }
+
+div.annual-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+div.event-card {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: 80%;
+    font-size: 1.2vw;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+div.event-card:last-child {
+    margin-bottom: 3rem;
+}
+
+div.event-card p {
+    margin: 0;
+    padding: 2rem;
+}
+
+div.image-text-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.embedded-img {
+    height: 100%;
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff8b;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    /* text-shadow: 2px 2px 0px #ffffff; */
+}
