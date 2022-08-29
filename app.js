@@ -13,16 +13,16 @@ for (num of panel_links) {
             scrollable.scrollTo(0,0);
         }
         else if (container?.classList.contains('2')) {
-            scrollable.scrollTo(0,450);
+            scrollable.scrollTo(0,425);
         }
         else if (container?.classList.contains('3')) {
-            scrollable.scrollTo(0,450*2);
+            scrollable.scrollTo(0,425*2);
         }
         else if (container?.classList.contains('4')) {
-            scrollable.scrollTo(0,450*3);
+            scrollable.scrollTo(0,425*3);
         }
         else if (container?.classList.contains('5')) {
-            scrollable.scrollTo(0,450*4);
+            scrollable.scrollTo(0,425*4);
         }
     });
 }
