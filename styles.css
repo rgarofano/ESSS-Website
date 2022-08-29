@@ -28,7 +28,7 @@ nav {
     width: 15rem;
     height: 3.3rem;
     color: white;
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 
 .logo:hover {
@@ -521,7 +521,7 @@ h4 {
 
 .bullet-points {
     text-align: left;
-    width: 22rem;
+    min-width: 22rem;
 }
 
 .text-container h3 {
@@ -1173,4 +1173,56 @@ div.event-card:nth-child(odd) .image-text-container {
         margin: 5rem 0 5rem 0;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     }
+}
+
+div.img-flex-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    margin: 3rem 0 7rem 0;
+}
+
+#cec-img {
+    position: relative;
+    left: 3rem;
+    width: 40%;
+    height: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+#exec-meeting-img {
+    position: relative;
+    top: 3rem;
+    width: 45%;
+    height: 35%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+div.info-array {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 10%;
+    row-gap: 3rem;
+    width: 95%;
+    margin: 0 0 2.5% 2.5%;
+    text-align: center;
+}
+
+div.info-card {
+    width: 18rem;
+    height: 30%;
+    font-size: 0.8em;
+    padding: 1rem;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+div.info-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+div.info-card h5 {
+    color: #203A6C;
 }
