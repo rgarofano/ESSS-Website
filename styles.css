@@ -1093,6 +1093,7 @@ div.hover-container:hover {
 
     div.resources {
         font-size: 0.8em;
+        width: 100%;
     }
 
     div.nav-panel {
