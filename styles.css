@@ -22,6 +22,7 @@ nav {
     height: fit-content;
     padding: 0 1.5rem 0 1.5rem;
     background-color: #203A6C;
+    transition: opacity 500ms ease-in-out;
 }
 
 .logo {
@@ -1354,4 +1355,48 @@ div.name-grid > div.name-title-container {
 
 div.name-grid > div.name-title-container:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+div.contact-modal {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 65vw;
+    height: 45vh;
+    max-width: 50rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 500ms;
+}
+
+@media (max-width: 1025px) {
+    div.contact-modal {
+        height: fit-content;
+    }
+}
+
+.exit-button {
+    position: absolute;
+    top: 1.8px;
+    right: 2px;
+    font-size: 2em;
+    transition: background-color 300ms ease-in-out, color 100ms ease-in-out;
+}
+
+.exit-button:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+div.page {
+    transition: opacity 500ms ease-in-out;
 }

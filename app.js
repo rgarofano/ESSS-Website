@@ -1,10 +1,37 @@
 const toggleButton = document.querySelector('.toggle-button');
+const nav = document.querySelector('nav');
 const navLinks = document.querySelector('.nav-links');
 const logo = document.querySelector('.logo');
 const pages = document.querySelectorAll('.page');
 const links = document.querySelectorAll('.page-link');
 const panel_links = document.querySelectorAll('.hover-container');
-const scrollable = document.querySelector('.scroll-container')
+const scrollable = document.querySelector('.scroll-container');
+const contact_button = document.querySelector('.contact-button');
+const modal = document.querySelector('.contact-modal');
+const exit_button = document.querySelector('.exit-button');
+
+let current_page;
+
+contact_button.addEventListener('click', () => {
+    modal.style.display = 'flex';
+    for (let page of pages) {
+        if (page.style.display != 'none') {
+            current_page = page;
+            page.style.opacity = '0.5';
+            page.style.pointerEvents = 'none';
+        }
+    }
+    nav.style.opacity = '0.5';
+    nav.style.pointerEvents = 'none';
+});
+
+exit_button.addEventListener('click', () => {
+    modal.style.display = 'none';
+    current_page.style.opacity = '1';
+    current_page.style.pointerEvents = 'all';
+    nav.style.opacity = '1';
+    nav.style.pointerEvents = 'all';
+});
 
 for (num of panel_links) {
     num.addEventListener('click', e => {
