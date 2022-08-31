@@ -1285,3 +1285,49 @@ span.title {
 div.member-card p {
     margin: 0;
 }
+
+div.policies-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    row-gap: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+div.docs-container {
+    width: 15rem;
+}
+
+span.list-heading {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+div.policies-info-container ul {
+    padding: 0;
+}
+
+div.policies-info-container ul li {
+    list-style-type: none;
+    color: #101020;
+}
+
+div.statement-block {
+    width: 75%;
+    height: fit-content;
+    margin: 2rem 0 2rem 0;
+    background-color: #203A6C;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+div.text-container > h5 {
+    padding: 1rem;
+}
+
+div.text-container > h5:nth-child(odd) {
+    margin-top: 3rem;
+}
