@@ -1227,3 +1227,61 @@ div.info-card:hover {
 div.info-card h5 {
     color: #203A6C;
 }
+
+div.our-team {
+    display: flex;
+    justify-content: center;
+}
+
+div.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3.2rem;
+    row-gap: 5rem;
+    width: 95%;
+    padding: 2rem;
+}
+
+div.member-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1.5rem;
+    width: 600px;
+    height: fit-content;
+}
+
+div.name-title-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+
+span.name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #203A6C;
+    text-align: center;
+}
+
+span.title {
+    font-size: 1.2em;
+    color:rgba(128, 128, 128, 0.5);
+    text-align: center;
+}
+
+.team-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 15%;
+    box-shadow: 0 10px 30px 1px rgb(0 0 0 / 30%);
+}
+
+div.member-card p {
+    margin: 0;
+}
