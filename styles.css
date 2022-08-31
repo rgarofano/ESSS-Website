@@ -1331,3 +1331,27 @@ div.text-container > h5 {
 div.text-container > h5:nth-child(odd) {
     margin-top: 3rem;
 }
+
+div.text-container > a:last-child {
+    margin-bottom: 2rem;
+}
+
+div.name-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 10%;
+    row-gap: 10rem;
+    margin: 2rem 0 2rem 0;
+}
+
+div.name-grid > div.name-title-container {
+    width: 20rem;
+    height: 5rem;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+div.name-grid > div.name-title-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
