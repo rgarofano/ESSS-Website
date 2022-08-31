@@ -1093,6 +1093,7 @@ div.hover-container:hover {
 
     div.resources {
         font-size: 0.8em;
+        width: 100%;
     }
 
     div.nav-panel {
@@ -1225,4 +1226,132 @@ div.info-card:hover {
 
 div.info-card h5 {
     color: #203A6C;
+}
+
+div.our-team {
+    display: flex;
+    justify-content: center;
+}
+
+div.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3.2rem;
+    row-gap: 5rem;
+    width: 95%;
+    padding: 2rem;
+}
+
+div.member-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1.5rem;
+    width: 600px;
+    height: fit-content;
+}
+
+div.name-title-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+
+span.name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #203A6C;
+    text-align: center;
+}
+
+span.title {
+    font-size: 1.2em;
+    color:rgba(128, 128, 128, 0.5);
+    text-align: center;
+}
+
+.team-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 15%;
+    box-shadow: 0 10px 30px 1px rgb(0 0 0 / 30%);
+}
+
+div.member-card p {
+    margin: 0;
+}
+
+div.policies-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    row-gap: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+div.docs-container {
+    width: 15rem;
+}
+
+span.list-heading {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+div.policies-info-container ul {
+    padding: 0;
+}
+
+div.policies-info-container ul li {
+    list-style-type: none;
+    color: #101020;
+}
+
+div.statement-block {
+    width: 75%;
+    height: fit-content;
+    margin: 2rem 0 2rem 0;
+    background-color: #203A6C;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+div.text-container > h5 {
+    padding: 1rem;
+}
+
+div.text-container > h5:nth-child(odd) {
+    margin-top: 3rem;
+}
+
+div.text-container > a:last-child {
+    margin-bottom: 2rem;
+}
+
+div.name-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 10%;
+    row-gap: 10rem;
+    margin: 2rem 0 2rem 0;
+}
+
+div.name-grid > div.name-title-container {
+    width: 20rem;
+    height: 5rem;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+div.name-grid > div.name-title-container:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
 }

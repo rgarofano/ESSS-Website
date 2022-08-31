@@ -47,7 +47,7 @@ links.forEach( link => {
             }
             else {
                 page.style.display = 'block';
-                if (target_class === 'resources' || target_class === 'annual-events') {
+                if (target_class === 'resources' || target_class === 'annual-events' || target_class == 'our-team') {
                         page.style.display = 'flex';
                 }
             }
