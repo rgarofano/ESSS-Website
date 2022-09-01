@@ -514,9 +514,32 @@ h4 {
 
 .bullet-points {
     text-align: left;
-    max-width: 40%;
 }
 
 .text-container h3 {
     width: 100%;
+}
+
+div.meeting-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    max-width: 45rem;
+    height: fit-content;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 3rem;
+    transition: all 100ms ease-in-out;
+}
+
+div.meeting-card:hover {
+    transform: scale(1.05);
+}
+
+h3.header {
+    margin: 0;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
