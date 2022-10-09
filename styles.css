@@ -984,20 +984,16 @@ a.form-link {
 }
 
 div.resources {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 3rem;
-    height: 89vh;
+    height: 100%;
+    overflow: hidden;
 }
 
 div.scroll-container {
-    height: 104%;
-    width: 60%;
-    max-width: 70rem;
+    height: 93vh;
+    width: 80%;
     overflow: scroll;
-    transform: translateY(2%);
     scrollbar-width: none;
+    margin: auto;
 }
 
 div.scroll-container::-webkit-scrollbar {
@@ -1008,15 +1004,17 @@ div.resource-card {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 95%;
     height: 50%;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 2.5% 1rem .5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    font-size: 1.2em;
+    font-size: 2vmin;
 }
 
 div.resource-card h4 {
     margin: 0;
+    font-size: 5vmin;
 }
 
 .link-button {
@@ -1028,6 +1026,7 @@ div.resource-card h4 {
     padding: 0.7rem;
     border-radius: 2em;
     color: white;
+    font-size: 2vmin;
     background-color: #203A6C;
     text-decoration: none;
     transition: box-shadow 100ms ease-in-out;
@@ -1035,6 +1034,10 @@ div.resource-card h4 {
 
 .link-button:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.material-symbols-outlined.link {
+    font-size: 3vmin;
 }
 
 div.link-container {
