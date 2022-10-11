@@ -7,12 +7,14 @@ const links = document.querySelectorAll('.page-link');
 const panel_links = document.querySelectorAll('.hover-container');
 const scrollable = document.querySelector('.scroll-container');
 const contact_button = document.querySelector('.contact-button');
+const modalContainer = document.querySelector('.modal-container');
 const modal = document.querySelector('.contact-modal');
 const exit_button = document.querySelector('.exit-button');
 
 let current_page;
 
 contact_button.addEventListener('click', () => {
+    modalContainer.style.display = 'flex';
     modal.style.display = 'flex';
     for (let page of pages) {
         if (page.style.display != 'none') {
@@ -26,6 +28,7 @@ contact_button.addEventListener('click', () => {
 });
 
 exit_button.addEventListener('click', () => {
+    modalContainer.style.display = 'none';
     modal.style.display = 'none';
     current_page.style.opacity = '1';
     current_page.style.pointerEvents = 'all';
